@@ -4,18 +4,16 @@
     {
         internal string DriveLetter { get; init; }
         internal string VolumeLabel { get; init; }
-        internal int DiskNumber { get; init; }
 
-        internal string Type { get; init; }
+        internal System.IO.DriveType Type { get; init; }
         internal string SizeFormatted { get; init; }
         internal long TotalSize { get; init; }
         internal long AvailableFreeSpace { get; init; }
 
-        internal DiskInfo(string driveLetter, string type, long totalSize, string volumeLabel, long availableFreeSpace, int diskNumber)
+        internal DiskInfo(string driveLetter, System.IO.DriveType type, long totalSize, string volumeLabel, long availableFreeSpace)
         {
             DriveLetter = driveLetter;
             VolumeLabel = volumeLabel;
-            DiskNumber = diskNumber;
 
             Type = type;
             SizeFormatted = FormatSize(totalSize);

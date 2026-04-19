@@ -15,14 +15,7 @@ namespace BadBuilder.Helpers
             {
                 if (drive.IsReady)
                 {
-                    string driveLetter = drive.Name;
-                    string volumeLabel = drive.VolumeLabel;
-                    string type = drive.DriveType.ToString();
-                    long totalSize = drive.TotalSize;
-                    long availableFreeSpace = drive.AvailableFreeSpace;
-                    int diskNumber = 2;
-
-                    disks.Add(new DiskInfo(driveLetter, type, totalSize, volumeLabel, availableFreeSpace, diskNumber));
+                    disks.Add(new DiskInfo(drive.Name, drive.DriveType, drive.TotalSize, drive.VolumeLabel, drive.AvailableFreeSpace));
                 }
             }
 

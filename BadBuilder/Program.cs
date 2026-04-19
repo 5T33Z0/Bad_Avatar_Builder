@@ -25,7 +25,7 @@ namespace BadBuilder
 
         static ActionQueue actionQueue = new();
 
-        static DiskInfo targetDisk = new("Z:\\", "Fixed", 0, "", 0, int.MaxValue); // Default values just incase.
+        static DiskInfo? targetDisk = null;
 
         static void Main(string[] args)
         {

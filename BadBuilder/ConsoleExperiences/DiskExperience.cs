@@ -10,11 +10,16 @@ namespace BadBuilder
         {
             var choices = new List<string>();
             foreach (var disk in disks)
-                choices.Add($"{disk.DriveLetter} ({disk.SizeFormatted}) - {disk.Type}");
+            {
+                if (disk.Type == DriveType.Removable)
+                {
+                    choices.Add($"{disk.DriveLetter} ({disk.SizeFormatted}) - {disk.Type}");
+                }
+            }
 
             return AnsiConsole.Prompt(
                 new SelectionPrompt<string>()
-                    .Title("Select a disk to format:")
+                    .Title("Select disk to format:")
                     .HighlightStyle(GreenStyle)
                     .AddChoices(choices)
             );
