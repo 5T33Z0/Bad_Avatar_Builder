@@ -20,7 +20,6 @@ namespace BadBuilder
         static readonly Style GreenStyle = new(new Color(118, 185, 0));
         static readonly Style GrayStyle = new(new Color(132, 133, 137));
 
-        static string XexToolPath = string.Empty;
         static string TargetDriveLetter = string.Empty;
 
         static ActionQueue actionQueue = new();
@@ -67,6 +66,12 @@ namespace BadBuilder
                 )
             );
 
+            string XexToolPath = Path.Combine($@"{EXTRACTED_DIR}", "BadUpdate Tools", "XePatcher", "XexTool.exe");
+            if (!File.Exists(XexToolPath))
+            {
+                throw new FileNotFoundException($"XexTool.exe not found at path: {XexToolPath}");
+            }
+
             AnsiConsole.MarkupLine("[#76B900]{0}[/] Copying requried files and folders.", Markup.Escape("[*]"));
             foreach (var folder in Directory.GetDirectories($@"{EXTRACTED_DIR}"))
             {
@@ -112,10 +117,6 @@ namespace BadBuilder
                             Directory.CreateDirectory(Path.Combine(TargetDriveLetter, "Apps"));
                             await FileSystemHelper.MirrorDirectoryAsync(Path.Combine(folder, "Rock Band Blitz"), TargetDriveLetter);
                         }, 10);
-                        break;
-
-                    case "BadUpdate Tools":
-                        XexToolPath = Path.Combine(folder, "XePatcher", "XexTool.exe");
                         break;
 
                     case "Rock Band Blitz":
