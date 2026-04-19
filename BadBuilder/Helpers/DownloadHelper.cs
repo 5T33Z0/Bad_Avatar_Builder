@@ -14,6 +14,7 @@ namespace BadBuilder.Helpers
             [
                 "Byrom90/XeUnshackle",
                 "FreeMyXe/FreeMyXe",
+                "grimdoomer/Xbox360BadUpdate",
                 "shutterbug2000/ABadAvatar",
             ];
 
@@ -45,6 +46,7 @@ namespace BadBuilder.Helpers
                         var name when name.Contains("ABadAvatar", StringComparison.OrdinalIgnoreCase) => "ABadAvatar",
                         var name when name.Contains("Free", StringComparison.OrdinalIgnoreCase) => "FreeMyXe",
                         var name when name.Contains("XeUnshackle", StringComparison.OrdinalIgnoreCase) => "XeUnshackle",
+                        var name when name.Contains("Tools", StringComparison.OrdinalIgnoreCase) => "BadUpdate Tools",
                         _ => asset.Name.Substring(0, asset.Name.Length - 4)
                     };
 
