@@ -47,6 +47,7 @@ namespace BadBuilder.Helpers
                         var name when name.Contains("Free", StringComparison.OrdinalIgnoreCase) => "FreeMyXe",
                         var name when name.Contains("XeUnshackle", StringComparison.OrdinalIgnoreCase) => "XeUnshackle",
                         var name when name.Contains("Tools", StringComparison.OrdinalIgnoreCase) => "BadUpdate Tools",
+                        var name when name.Contains("BadUpdate", StringComparison.OrdinalIgnoreCase) => "BadUpdate",
                         _ => asset.Name.Substring(0, asset.Name.Length - 4)
                     };
 

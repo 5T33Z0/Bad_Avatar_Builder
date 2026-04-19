@@ -47,12 +47,17 @@ namespace BadBuilder
                 bool confirmation = PromptFormatConfirmation(selectedDisk);
                 if (confirmation)
                 {
-                    if (!FormatDisk(targetDisk)) continue; 
+                    if (!FormatDisk(targetDisk)) continue;
                     break;
                 }
             }
 
             List<ArchiveItem> downloadedFiles = DownloadRequiredFiles().Result;
+
+            if (Directory.Exists(EXTRACTED_DIR))
+            {
+                Directory.Delete(EXTRACTED_DIR, recursive: true);
+            }
             ExtractFiles(downloadedFiles).Wait();
 
             ClearConsole();
@@ -72,11 +77,27 @@ namespace BadBuilder
                 throw new FileNotFoundException($"XexTool.exe not found at path: {XexToolPath}");
             }
 
+            using (StreamWriter writer = new(Path.Combine(TargetDriveLetter, "info.txt")))
+            {
+                writer.WriteLine($"This drive was created with BadBuilder by Pdawg.\nFind more info here: https://github.com/Pdawg-bytes/BadBuilder\nConfiguration: \n-  BadUpdate target binary: {selectedDefaultApp}");
+            }
+            Directory.CreateDirectory(Path.Combine(TargetDriveLetter, "Apps"));
+
             AnsiConsole.MarkupLine("[#76B900]{0}[/] Copying requried files and folders.", Markup.Escape("[*]"));
             foreach (var folder in Directory.GetDirectories($@"{EXTRACTED_DIR}"))
             {
                 switch (folder.Split("\\").Last())
                 {
+                    case "ABadAvatar":
+                        EnqueueMirrorDirectory(folder, TargetDriveLetter, 10);
+                        break;
+
+                    case "BadUpdate":
+                        break;
+
+                    case "BadUpdate Tools":
+                        break;
+
                     case "XeXmenu":
                         EnqueueMirrorDirectory(
                             Path.Combine(folder, $"{ContentFolder}C0DE9999"),
@@ -97,33 +118,10 @@ namespace BadBuilder
                     case "XeUnshackle":
                         if (selectedDefaultApp != "XeUnshackle") break;
                         string subFolderPath = Directory.GetDirectories(folder).FirstOrDefault();
-                        File.Delete(Path.Combine(subFolderPath, "README - IMPORTANT.txt"));
                         EnqueueMirrorDirectory(
                             subFolderPath,
                             TargetDriveLetter,
                             9
-                        );
-                        break;
-
-                    case "BadUpdate":
-                        actionQueue.EnqueueAction(async () =>
-                        {
-                            using (StreamWriter writer = new(Path.Combine(TargetDriveLetter, "name.txt")))
-                                writer.WriteLine("USB Storage Device");
-
-                            using (StreamWriter writer = new(Path.Combine(TargetDriveLetter, "info.txt")))
-                                writer.WriteLine($"This drive was created with BadBuilder by Pdawg.\nFind more info here: https://github.com/Pdawg-bytes/BadBuilder\nConfiguration: \n-  BadUpdate target binary: {selectedDefaultApp}");
-
-                            Directory.CreateDirectory(Path.Combine(TargetDriveLetter, "Apps"));
-                            await FileSystemHelper.MirrorDirectoryAsync(Path.Combine(folder, "Rock Band Blitz"), TargetDriveLetter);
-                        }, 10);
-                        break;
-
-                    case "Rock Band Blitz":
-                        EnqueueMirrorDirectory(
-                            Path.Combine(folder, $"{ContentFolder}5841122D\\000D0000"),
-                            Path.Combine(TargetDriveLetter, $"{ContentFolder}5841122D\\000D0000"),
-                            8
                         );
                         break;
 

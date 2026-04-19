@@ -23,7 +23,7 @@ namespace BadBuilder.Formatter
                     StartInfo = new ProcessStartInfo
                     {
                         FileName = "format.com",
-                        Arguments = $"\"{driveLetter}:\" /Q /X /Y /FS:FAT32 /V:BADUPDATE",
+                        Arguments = $"\"{driveLetter}:\" /Q /X /Y /FS:FAT32 /V:ABADAVATAR",
                         RedirectStandardOutput = false,
                         RedirectStandardError = false,
                         UseShellExecute = false,
@@ -73,7 +73,7 @@ namespace BadBuilder.Formatter
 
             driveHandle.Dispose();
 
-            if (!SetVolumeLabel($"{driveLetter}:", "BADUPDATE"))
+            if (!SetVolumeLabel($"{driveLetter}:", "ABADAVATAR"))
                 return Error($"Unable to set volume label. GetLastError: {Marshal.GetLastWin32Error()}");
 
             return string.Empty;
@@ -179,7 +179,7 @@ namespace BadBuilder.Formatter
             string oemName = "MSWIN4.1";
             Encoding.ASCII.GetBytes(oemName).CopyTo(rawBytes.Slice(3, 8));
 
-            string volumeLabel = "BADUPDATE  ";
+            string volumeLabel = "ABADAVATAR ";
             Encoding.ASCII.GetBytes(volumeLabel).CopyTo(rawBytes.Slice(71, 11));
 
             string fileSystemType = "FAT32   ";
