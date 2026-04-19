@@ -16,6 +16,9 @@ namespace BadBuilder
             };
             await DownloadHelper.GetGitHubAssets(items);
 
+            // Sort items by name
+            items.Sort((a, b) => string.Compare(a.name, b.name, StringComparison.CurrentCulture));
+
             List<DownloadItem> existingFiles = items.Where(item =>
                 File.Exists(Path.Combine(DOWNLOAD_DIR, item.url.Split('/').Last()))).ToList();
 
