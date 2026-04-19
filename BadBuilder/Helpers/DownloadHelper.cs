@@ -20,7 +20,23 @@ namespace BadBuilder.Helpers
             foreach (var repo in repos)
             {
                 string[] splitRepo = repo.Split('/');
-                var latestRelease = await gitClient.Repository.Release.GetLatest(splitRepo[0], splitRepo[1]);
+                Release? latestRelease = null;
+                try
+                {
+                    // Try to get the latest full release
+                    latestRelease = await gitClient.Repository.Release.GetLatest(splitRepo[0], splitRepo[1]);
+                }
+                catch (NotFoundException)
+                {
+                    // No full release found, fallback to latest pre-release
+                    var allReleases = await gitClient.Repository.Release.GetAll(splitRepo[0], splitRepo[1]);
+                    latestRelease = allReleases.FirstOrDefault(r => r.Prerelease);
+                }
+
+                if (latestRelease == null)
+                {
+                    throw new Exception("No releases found for repository: " + repo);
+                }
 
                 foreach (var asset in latestRelease.Assets)
                 {
