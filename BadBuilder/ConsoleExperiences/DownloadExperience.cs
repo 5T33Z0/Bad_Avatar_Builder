@@ -12,7 +12,6 @@ namespace BadBuilder
             List<DownloadItem> items = new()
             {
                 ("XeXmenu", "https://github.com/Pdawg-bytes/BadBuilder/releases/download/v0.10a/MenuData.7z"),
-                ("Rock Band Blitz", "https://github.com/Pdawg-bytes/BadBuilder/releases/download/v0.10a/GameData.zip"),
                 ("Simple 360 NAND Flasher", "https://github.com/Pdawg-bytes/BadBuilder/releases/download/v0.10a/Flasher.7z"),
             };
             await DownloadHelper.GetGitHubAssets(items);

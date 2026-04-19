@@ -12,9 +12,9 @@ namespace BadBuilder.Helpers
             GitHubClient gitClient = new(new ProductHeaderValue("BadBuilder-Downloader"));
             List<string> repos =
             [
-                "grimdoomer/Xbox360BadUpdate",
                 "Byrom90/XeUnshackle",
-                "FreeMyXe/FreeMyXe"
+                "FreeMyXe/FreeMyXe",
+                "shutterbug2000/ABadAvatar",
             ];
 
             foreach (var repo in repos)
@@ -26,9 +26,8 @@ namespace BadBuilder.Helpers
                 {
                     string friendlyName = asset.Name switch
                     {
+                        var name when name.Contains("ABadAvatar", StringComparison.OrdinalIgnoreCase) => "ABadAvatar",
                         var name when name.Contains("Free", StringComparison.OrdinalIgnoreCase) => "FreeMyXe",
-                        var name when name.Contains("Tools", StringComparison.OrdinalIgnoreCase) => "BadUpdate Tools",
-                        var name when name.Contains("BadUpdate", StringComparison.OrdinalIgnoreCase) => "BadUpdate",
                         var name when name.Contains("XeUnshackle", StringComparison.OrdinalIgnoreCase) => "XeUnshackle",
                         _ => asset.Name.Substring(0, asset.Name.Length - 4)
                     };
