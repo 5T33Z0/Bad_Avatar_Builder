@@ -45,8 +45,8 @@
 - Take the USB flash drive out of your PC
 - Put it in one of the USB ports on your Xbox 360
 - Turn the console on and wait for the exploit to finish. It can take anything from 10 seconds to a about a minute
-- Once the exploit has succeeded, you will see the following animation:<br> ![](https://private-user-images.githubusercontent.com/36423169/428096972-af37d4ae-4ff6-4175-8f81-47869ff63ed6.gif?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzg3MDIxNjAsIm5iZiI6MTc3ODcwMTg2MCwicGF0aCI6Ii8zNjQyMzE2OS80MjgwOTY5NzItYWYzN2Q0YWUtNGZmNi00MTc1LThmODEtNDc4NjlmZjYzZWQ2LmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA1MTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNTEzVDE5NTEwMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWUxYWQ0YTRiNTIwNGE1YzIwODRkYjQyNDhkMTJjNjNjMjE4Mzc4NDIwODlmNzUwZTY1MTE1YjcwOWYwM2Y3ZGYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRmdpZiJ9.h_mVD_XkxkRUcmtSVDP9Fgvsz0Xj12MNvSKM7eK7PI4)
-- In the next screen, press the `Back` button on your control to continue loading to the Aurora Dashboard
+- Once the exploit has succeeded, you will see the following animation:<br> ![XeUnshackle_Banner](https://github.com/user-attachments/assets/af37d4ae-4ff6-4175-8f81-47869ff63ed6)
+- In the next screen, press the `Back` button on your controller to continue loading to the Aurora Dashboard
 
 ## 4. Configuring the Aurora Dashboard
 
