@@ -1,3 +1,30 @@
+![alt text](ABA.png)
+
+# Bad Avatar Builder
+
+**Bad Avatar Builder** is a CLI Tool for creating a A Bad Avatar USB flash drive for the Xbox 360. It automates the process of formatting the USB drive, downloading required files, extracting them, and allowing the addition of homebrew applications. It's based on Kumiliya's fork of **BadBuilder** by Pdawg-bytes which uses the [**A Bad Avatar**](https://github.com/shutterbug2000/ABadAvatar) exploit instead of [BadUpdate](https://github.com/grimdoomer/Xbox360BadUpdate) for exploiting the Xbox 360.
+
+All I did was adding a new Logo and an X64 executable since kurniliya's fork doesnt contain one.
+
+## Usage
+
+- Install dotNET Runtime: https://dotnet.microsoft.com/en-us/download/dotnet/8.0
+- Download Bad Avatar Builder from [Releases](https://github.com/5T33Z0/Bad_Avatar_Builder/releases) Section and unzip
+- Run .exe and follow the on-screen Instaructions to create the USB flash drive.
+- See Pictures for details
+
+## Credits
+- **Grimdoomer:** [BadUpdate](https://github.com/grimdoomer/Xbox360BadUpdate)
+- **Pdawg-bytes:** [BadBuilder](https://github.com/Pdawg-bytes/BadBuilder)
+- **Kumiliya:** [BadBuilder with A Bad Avatar](https://github.com/kurniliya/BadBuilder)
+- **InvoxiPlayGames:** [FreeMyXe](https://github.com/FreeMyXe/FreeMyXe)
+- **Byrom90:** [XeUnshackle](https://github.com/Byrom90/XeUnshackle)
+- **Swizzy:** [Simple 360 NAND Flasher](https://github.com/Swizzy/XDK_Projects)
+- **Team XeDEV:** XeXMenu
+
+Original REAMDE below
+
+---
 # BadBuilder
 BadBuilder is a tool for creating a BadUpdate USB drive for the Xbox 360. It automates the process of formatting the USB drive, downloading required files, extracting them, and allowing the addition of homebrew applications.
 
