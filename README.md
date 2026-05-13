@@ -11,7 +11,7 @@ All I did was adding a new Logo and an X64 executable since kurniliya's fork doe
 - Install dotNET Runtime: https://dotnet.microsoft.com/en-us/download/dotnet/8.0
 - Download Bad Avatar Builder from [Releases](https://github.com/5T33Z0/Bad_Avatar_Builder/releases) Section and unzip
 - Run .exe and follow the on-screen Instaructions to create the USB flash drive.
-- See Pictures for details
+- See screenshots for details
 
 ## Credits
 - **Grimdoomer:** [BadUpdate](https://github.com/grimdoomer/Xbox360BadUpdate)
