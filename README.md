@@ -2,6 +2,8 @@
 
 # Bad Avatar Builder
 
+## About
+
 **Bad Avatar Builder** is a CLI Tool for creating a A Bad Avatar USB flash drive for the Xbox 360. It automates the process of formatting the USB drive, downloading required files, extracting them, and allowing the addition of homebrew applications. It's based on Kumiliya's fork of **BadBuilder** by Pdawg-bytes which uses the [**A Bad Avatar**](https://github.com/shutterbug2000/ABadAvatar) exploit instead of [BadUpdate](https://github.com/grimdoomer/Xbox360BadUpdate) for exploiting the Xbox 360.
 
 All I did was adding a new Logo and an X64 executable since kurniliya's fork doesnt contain one.
