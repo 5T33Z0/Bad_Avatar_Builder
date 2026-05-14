@@ -20,7 +20,7 @@ All I did was add a new logo, compile an x64 executable, and write a setup guide
 - **InvoxiPlayGames:** [FreeMyXe](https://github.com/FreeMyXe/FreeMyXe)
 - **Byrom90:** [XeUnshackle](https://github.com/Byrom90/XeUnshackle)
 - **Swizzy:** [Simple 360 NAND Flasher](https://github.com/Swizzy/XDK_Projects)
-- **Team XeDEV:** XeXMenu
+- **Team XeDEV:** [XeXMenu](https://www.se7ensins.com/downloads/xex-menu-1-2.22/)
 - **Phoenix Team:** [Aurora Dashboard](https://phoenix.xboxunity.net/#/news)
 
 ---
