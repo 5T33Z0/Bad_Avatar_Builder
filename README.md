@@ -1,4 +1,4 @@
-<img width="694" height="270" alt="ABAB" src="https://github.com/user-attachments/assets/051a2bb2-64ef-4ddb-8417-89f191f85d8e" />
+![](https://github.com/user-attachments/assets/051a2bb2-64ef-4ddb-8417-89f191f85d8e)
 
 # Bad Avatar Builder
 
