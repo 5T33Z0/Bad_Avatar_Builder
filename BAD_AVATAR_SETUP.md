@@ -28,28 +28,27 @@
 ### Running the Builder
 
 4. Double-click `Bad_Avatar-Builder.exe`.
-5. Press **Enter** at the welcome screen:<br>![](Screenshots/01.PNG)
-6. Select your USB flash drive from the list and press **Enter**:<br>![](Screenshots/02.PNG)
-7. Type `y` and press **Enter** to confirm formatting:<br>![](Screenshots/03.PNG)
-8. Press **Enter** to begin downloading required files:<br>![](Screenshots/04.PNG)
-9. Wait for all necessary files to download:<br>![](Screenshots/05.PNG)
-10. Select your exploit — **XeUnshackled** is recommended — and press **Enter**:<br>![](Screenshots/06.PNG)
-11. Wait for the process to complete:<br>![](Screenshots/07.PNG)
-12. Type `y` and press **Enter** to add Homebrew programs:<br>![](Screenshots/08.PNG)
-13. Open File Explorer, navigate to your **`Aurora`** folder, and copy the full path from the address bar (double-click the address bar):<br>![](Screenshots/10.PNG)
-14. Paste the path into the Command Prompt window and press **Enter**:<br>![](Screenshots/11.PNG)
-15. Use the **↓ arrow key** to highlight **Finish & Save** and press **Enter**:<br>![](Screenshots/13.PNG)
-16. Wait for the files to be copied to the USB flash drive:<br>![](Screenshots/16.PNG)
+5. Press **Enter** at the welcome screen:<br><img width="711" height="373" alt="01" src="https://github.com/user-attachments/assets/ca83170b-b8e8-469e-807f-a3144a9c4924" />
+6. Select your USB flash drive from the list and press **Enter**:<br><img width="720" height="397" alt="02" src="https://github.com/user-attachments/assets/4ccefb2b-da21-46ea-a7fd-f6a966b9fe28" />
+7. Type `y` and press **Enter** to confirm formatting:<br> <img width="831" height="386" alt="03" src="https://github.com/user-attachments/assets/98524016-9757-404e-ab3d-8b97f6598a15" />
+8. Press **Enter** to begin downloading required files:<br> <img width="710" height="512" alt="04" src="https://github.com/user-attachments/assets/52328633-6c36-4c8f-a23e-8158b5455486" />
+9. Wait for all necessary files to download:<br><img width="721" height="512" alt="05" src="https://github.com/user-attachments/assets/0fe3f4f4-9644-46bc-baee-3e346217d34b" />
+10. Select your exploit — **XeUnshackled** is recommended — and press **Enter**:<br> <img width="709" height="431" alt="06" src="https://github.com/user-attachments/assets/49bd6331-2065-41d2-a0ae-0e6daa374bba" />
+11. Wait for the process to complete:<br> <img width="709" height="376" alt="07" src="https://github.com/user-attachments/assets/511b2c56-ffe4-4190-8805-2932086df70e" />
+12. Type `y` and press **Enter** to add Homebrew programs:<br> <img width="702" height="375" alt="08" src="https://github.com/user-attachments/assets/e13836ed-2d6b-4f24-8d01-8fc609a576a3" />
+13. Open File Explorer, navigate to your **`Aurora`** folder, and copy the full path from the address bar (double-click the address bar):<br> <img width="661" height="312" alt="10" src="https://github.com/user-attachments/assets/a5ea56e5-077c-4b86-a2cd-9b69ad6f2f38" />
+14. Paste the path into the Command Prompt window and press **Enter**:<br> <img width="724" height="413" alt="11" src="https://github.com/user-attachments/assets/85c1d08d-6198-47b0-838b-aefe9decbc6d" />
+15. Use the **↓ arrow key** to highlight **Finish & Save** and press **Enter**:<br> <img width="714" height="447" alt="13" src="https://github.com/user-attachments/assets/ea461f3a-9b02-42df-b0d2-35a6a62dacb5" />
+16. Wait for the files to be copied to the USB flash drive:<br> <img width="712" height="512" alt="16" src="https://github.com/user-attachments/assets/d06e4848-5a77-4f60-aef1-6a5cddebe237" />
 
 ### Configuring `launch.ini`
 
-17. Open the root of the USB flash drive in File Explorer and open **`launch.ini`** in Notepad or any text editor:<br>![](Screenshots/17.PNG)
+17. Open the root of the USB flash drive in File Explorer and open **`launch.ini`** in Notepad or any text editor:<br><img width="789" height="318" alt="17" src="https://github.com/user-attachments/assets/cf50c5ad-38b5-4186-9490-359378a43280" />
 18. On **line 37**, find the `Default =` entry and set it to:
-    
     ```
     Usb:\Apps\Aurora\Aurora.xex
     ```
-    **Screenshot**: <br> ![](Screenshots/18.PNG)
+    **Screenshot**: <br> <img width="1200" height="800" alt="18" src="https://github.com/user-attachments/assets/59f3b683-1ae5-49d4-8b90-236fc7299f82" />
 19. Save the file. The USB drive is ready.
 
 ## 3. Applying the Exploit
