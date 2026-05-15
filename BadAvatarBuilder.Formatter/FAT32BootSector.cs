@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace BadBuilder.Formatter
+namespace BadAvatarBuilder.Formatter
 {
     // Reference: https://cscie92.dce.harvard.edu/spring2024/K70F120M/bootSector.h
 

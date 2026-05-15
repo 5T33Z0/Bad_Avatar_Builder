@@ -1,15 +1,15 @@
 ﻿using Octokit;
 using Spectre.Console;
 
-using static BadBuilder.Utilities.Constants;
+using static BadAvatarBuilder.Utilities.Constants;
 
-namespace BadBuilder.Helpers
+namespace BadAvatarBuilder.Helpers
 {
     internal static class DownloadHelper
     {
         internal static async Task GetGitHubAssets(List<DownloadItem> items)
         {
-            GitHubClient gitClient = new(new ProductHeaderValue("BadBuilder-Downloader"));
+            GitHubClient gitClient = new(new ProductHeaderValue("BadAvatarBuilder-Downloader"));
             List<string> repos =
             [
                 "Byrom90/XeUnshackle",

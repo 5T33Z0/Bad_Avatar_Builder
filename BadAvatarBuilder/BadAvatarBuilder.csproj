@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BadBuilder.Formatter\BadBuilder.Formatter.csproj" />
+    <ProjectReference Include="..\BadAvatarBuilder.Formatter\BadAvatarBuilder.Formatter.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace BadBuilder.Utilities
+﻿namespace BadAvatarBuilder.Utilities
 {
     internal class ActionQueue
     {

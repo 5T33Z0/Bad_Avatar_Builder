@@ -1,9 +1,9 @@
-﻿using BadBuilder.Models;
-using BadBuilder.Formatter;
+﻿using BadAvatarBuilder.Models;
+using BadAvatarBuilder.Formatter;
 using System.Runtime.InteropServices;
 using Spectre.Console;
 
-namespace BadBuilder.Helpers
+namespace BadAvatarBuilder.Helpers
 {
     internal static class DiskHelper
     {

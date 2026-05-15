@@ -7,10 +7,10 @@ using System.Runtime.InteropServices;
 using Windows.Win32.Storage.FileSystem;
 
 using static Windows.Win32.PInvoke;
-using static BadBuilder.Formatter.Constants;
-using static BadBuilder.Formatter.Utilities;
+using static BadAvatarBuilder.Formatter.Constants;
+using static BadAvatarBuilder.Formatter.Utilities;
 
-namespace BadBuilder.Formatter
+namespace BadAvatarBuilder.Formatter
 {
     public static class DiskFormatter
     {

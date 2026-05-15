@@ -3,9 +3,9 @@ using Windows.Win32.System.Memory;
 using System.Runtime.InteropServices;
 
 using static Windows.Win32.PInvoke;
-using static BadBuilder.Formatter.Constants;
+using static BadAvatarBuilder.Formatter.Constants;
 
-namespace BadBuilder.Formatter
+namespace BadAvatarBuilder.Formatter
 {
     static class Utilities
     {

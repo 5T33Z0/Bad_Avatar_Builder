@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadBuilder", "BadBuilder\BadBuilder.csproj", "{654D211A-668A-4BA4-8BD4-174A11666A3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadAvatarBuilder", "BadAvatarBuilder\BadAvatarBuilder.csproj", "{654D211A-668A-4BA4-8BD4-174A11666A3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadBuilder.Formatter", "BadBuilder.Formatter\BadBuilder.Formatter.csproj", "{30B03E55-670C-47F3-A9C6-7533C9095669}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadAvatarBuilder.Formatter", "BadAvatarBuilder.Formatter\BadAvatarBuilder.Formatter.csproj", "{30B03E55-670C-47F3-A9C6-7533C9095669}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

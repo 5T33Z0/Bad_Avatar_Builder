@@ -3,9 +3,9 @@ using System.Diagnostics;
 using SharpCompress.Common;
 using SharpCompress.Archives;
 
-using static BadBuilder.Utilities.Constants;
+using static BadAvatarBuilder.Utilities.Constants;
 
-namespace BadBuilder.Helpers
+namespace BadAvatarBuilder.Helpers
 {
     internal static class ArchiveHelper
     {

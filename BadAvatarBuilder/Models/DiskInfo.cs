@@ -1,4 +1,4 @@
-﻿namespace BadBuilder.Models
+﻿namespace BadAvatarBuilder.Models
 {
     internal class DiskInfo
     {

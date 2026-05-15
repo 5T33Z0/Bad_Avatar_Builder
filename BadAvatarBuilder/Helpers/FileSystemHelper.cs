@@ -1,4 +1,4 @@
-﻿namespace BadBuilder.Helpers
+﻿namespace BadAvatarBuilder.Helpers
 {
     internal static class FileSystemHelper
     {

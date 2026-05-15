@@ -1,7 +1,7 @@
 ﻿using Spectre.Console;
-using BadBuilder.Helpers;
+using BadAvatarBuilder.Helpers;
 
-namespace BadBuilder
+namespace BadAvatarBuilder
 {
     internal partial class Program
     {

@@ -1,7 +1,7 @@
 ﻿using Spectre.Console;
 using System.Diagnostics;
 
-namespace BadBuilder.Helpers
+namespace BadAvatarBuilder.Helpers
 {
     internal static class PatchHelper
     {

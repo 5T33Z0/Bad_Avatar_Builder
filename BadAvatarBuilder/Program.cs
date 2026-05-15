@@ -3,13 +3,13 @@ global using ArchiveItem = (string name, string path);
 global using HomebrewApp = (string name, string folder, string entryPoint);
 
 using Spectre.Console;
-using BadBuilder.Models;
-using BadBuilder.Helpers;
-using BadBuilder.Utilities;
+using BadAvatarBuilder.Models;
+using BadAvatarBuilder.Helpers;
+using BadAvatarBuilder.Utilities;
 
-using static BadBuilder.Utilities.Constants;
+using static BadAvatarBuilder.Utilities.Constants;
 
-namespace BadBuilder
+namespace BadAvatarBuilder
 {
     internal partial class Program
     {
@@ -79,7 +79,7 @@ namespace BadBuilder
 
             using (StreamWriter writer = new(Path.Combine(TargetDriveLetter, "info.txt")))
             {
-                writer.WriteLine($"This drive was created with BadBuilder by Pdawg.\nFind more info here: https://github.com/Pdawg-bytes/BadBuilder\nConfiguration: \n-  BadUpdate target binary: {selectedDefaultApp}");
+                writer.WriteLine($"This drive was created with BadAvatarBuilder (based on BadBuilder by Pdawg).\nFind more info here: https://github.com/Pdawg-bytes/BadBuilder\nConfiguration: \n-  BadUpdate target binary: {selectedDefaultApp}");
             }
             Directory.CreateDirectory(Path.Combine(TargetDriveLetter, "Apps"));
 
@@ -138,7 +138,7 @@ namespace BadBuilder
             }
             actionQueue.ExecuteActionsAsync().Wait();
 
-            File.AppendAllText(Path.Combine(TargetDriveLetter, "info.txt"), $"-  Disk formatted using {(targetDisk.TotalSize < 31 * GB ? "Windows \"format.com\"" : "BadBuilder Large FAT32 formatter")}\n");
+            File.AppendAllText(Path.Combine(TargetDriveLetter, "info.txt"), $"-  Disk formatted using {(targetDisk.TotalSize < 31 * GB ? "Windows \"format.com\"" : "BadAvatarBuilder Large FAT32 formatter")}\n");
             File.AppendAllText(Path.Combine(TargetDriveLetter, "info.txt"), $"-  Disk total size: {targetDisk.TotalSize} bytes\n");
 
             ClearConsole();

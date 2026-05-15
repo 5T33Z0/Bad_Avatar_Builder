@@ -1,4 +1,4 @@
-﻿namespace BadBuilder.Formatter
+﻿namespace BadAvatarBuilder.Formatter
 {
     static class Constants
     {
