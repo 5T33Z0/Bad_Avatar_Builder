@@ -13,6 +13,20 @@ All I did was add a new logo, compile an x64 executable since Kurniliya's  fork 
 - Run the .exe and follow the on-screen instructions to create the USB flash drive
 - For detailed instructions, follow my [Bad Avatar Setup Guide](BAD_AVATAR_SETUP.md)
 
+## Integrating BadUpdate 1.3
+Bad Avatar 1.3 is the latest iteration of the Bad Avatar exploit for the Xbox 360. It improves the exploit's success rate, making the process more reliable than previous versions, and also improves the overall tempo/speed of the exploit process. NarcejaLmao has managed to incorporate it into the Bad Avatar jailbreak.
+
+To update your existing Bad Avatar USB flash drive to use the latest exploit, do the following:
+
+- Download the latest release of [ANewAvatar](https://github.com/NarcejaLmao/ANewAvatar/releases)
+- Extract it
+- Replace the corresponding files on your existing Bad Avatar USB flash drive
+- Done
+
+> [!NOTE]
+>
+> I will try to incorporate this into Bad Avatar Builder at some point.
+
 ## Credits
 - **Grimdoomer:** [BadUpdate](https://github.com/grimdoomer/Xbox360BadUpdate)
 - **Pdawg-bytes:** [BadBuilder](https://github.com/Pdawg-bytes/BadBuilder)
