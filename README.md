@@ -14,7 +14,7 @@ All I did was add a new logo, compile an x64 executable since Kurniliya's  fork 
 - For detailed instructions, follow my [Bad Avatar Setup Guide](BAD_AVATAR_SETUP.md)
 
 ## Integrating BadUpdate 1.3
-Bad Avatar 1.3 is the latest iteration of the Bad Avatar exploit for the Xbox 360. It improves the exploit's success rate, making the process more reliable than previous versions, and also improves the overall tempo/speed of the exploit process. NarcejaLmao has managed to incorporate it into the Bad Avatar jailbreak.
+Bad Avatar 1.3 is the latest iteration of the Bad Avatar exploit for the Xbox 360. It improves the exploit's success rate to about 97% and speed (a few seconds). NarcejaLmao has managed to incorporate it into the Bad Avatar jailbreak.
 
 To update your existing Bad Avatar USB flash drive to use the latest exploit, do the following:
 
@@ -63,6 +63,7 @@ BadBuilder is a tool for creating a BadUpdate USB drive for the Xbox 360. It aut
 ### File Extraction & Copying
 - Extracts all necessary files automatically.
 - Prepares the USB drive for the BadUpdate exploit by copying all required files.
+
 ### Homebrew Support
 - Allows adding homebrew applications by specifying their root folder.
 - Prompts for the path of the entry point if it could not be automatically determined.
